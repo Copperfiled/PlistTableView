@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327D6D981F4D4AF00087D05A /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D6D971F4D4AF00087D05A /* PlistManager.swift */; };
+		327D6D9A1F4D63A40087D05A /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D6D991F4D63A40087D05A /* SectionModel.swift */; };
+		327D6D9C1F4D64210087D05A /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D6D9B1F4D64210087D05A /* CellModel.swift */; };
+		327D6D9E1F4D7D110087D05A /* GHFileURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D6D9D1F4D7D110087D05A /* GHFileURL.swift */; };
+		32926D7E1F53B5FE007CBAFC /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32926D7D1F53B5FE007CBAFC /* test.plist */; };
 		32FEA92B1F4C00B200CDE0CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEA92A1F4C00B200CDE0CD /* AppDelegate.swift */; };
 		32FEA92D1F4C00B200CDE0CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEA92C1F4C00B200CDE0CD /* ViewController.swift */; };
 		32FEA9301F4C00B200CDE0CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FEA92E1F4C00B200CDE0CD /* Main.storyboard */; };
@@ -15,7 +20,6 @@
 		32FEA9401F4C00B300CDE0CD /* PlistTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEA93F1F4C00B300CDE0CD /* PlistTableViewTests.swift */; };
 		32FEA94B1F4C00B300CDE0CD /* PlistTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEA94A1F4C00B300CDE0CD /* PlistTableViewUITests.swift */; };
 		32FEA9591F4C00EB00CDE0CD /* PlistTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEA9581F4C00EB00CDE0CD /* PlistTableView.swift */; };
-		32FEA95B1F4C470C00CDE0CD /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FEA95A1F4C470C00CDE0CD /* test.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		327D6D971F4D4AF00087D05A /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
+		327D6D991F4D63A40087D05A /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		327D6D9B1F4D64210087D05A /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		327D6D9D1F4D7D110087D05A /* GHFileURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHFileURL.swift; sourceTree = "<group>"; };
+		32926D7D1F53B5FE007CBAFC /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
 		32FEA9271F4C00B200CDE0CD /* PlistTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlistTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FEA92A1F4C00B200CDE0CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32FEA92C1F4C00B200CDE0CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +59,6 @@
 		32FEA94A1F4C00B300CDE0CD /* PlistTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistTableViewUITests.swift; sourceTree = "<group>"; };
 		32FEA94C1F4C00B300CDE0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32FEA9581F4C00EB00CDE0CD /* PlistTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistTableView.swift; sourceTree = "<group>"; };
-		32FEA95A1F4C470C00CDE0CD /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		32FEA9291F4C00B200CDE0CD /* PlistTableView */ = {
 			isa = PBXGroup;
 			children = (
+				32926D7D1F53B5FE007CBAFC /* test.plist */,
 				32FEA92A1F4C00B200CDE0CD /* AppDelegate.swift */,
 				32FEA92C1F4C00B200CDE0CD /* ViewController.swift */,
 				32FEA92E1F4C00B200CDE0CD /* Main.storyboard */,
@@ -108,7 +117,10 @@
 				32FEA9331F4C00B200CDE0CD /* LaunchScreen.storyboard */,
 				32FEA9361F4C00B200CDE0CD /* Info.plist */,
 				32FEA9581F4C00EB00CDE0CD /* PlistTableView.swift */,
-				32FEA95A1F4C470C00CDE0CD /* test.plist */,
+				327D6D971F4D4AF00087D05A /* PlistManager.swift */,
+				327D6D9D1F4D7D110087D05A /* GHFileURL.swift */,
+				327D6D991F4D63A40087D05A /* SectionModel.swift */,
+				327D6D9B1F4D64210087D05A /* CellModel.swift */,
 			);
 			path = PlistTableView;
 			sourceTree = "<group>";
@@ -241,9 +253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32FEA95B1F4C470C00CDE0CD /* test.plist in Resources */,
 				32FEA9351F4C00B200CDE0CD /* LaunchScreen.storyboard in Resources */,
 				32FEA9321F4C00B200CDE0CD /* Assets.xcassets in Resources */,
+				32926D7E1F53B5FE007CBAFC /* test.plist in Resources */,
 				32FEA9301F4C00B200CDE0CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327D6D9E1F4D7D110087D05A /* GHFileURL.swift in Sources */,
+				327D6D981F4D4AF00087D05A /* PlistManager.swift in Sources */,
 				32FEA92D1F4C00B200CDE0CD /* ViewController.swift in Sources */,
 				32FEA92B1F4C00B200CDE0CD /* AppDelegate.swift in Sources */,
+				327D6D9A1F4D63A40087D05A /* SectionModel.swift in Sources */,
 				32FEA9591F4C00EB00CDE0CD /* PlistTableView.swift in Sources */,
+				327D6D9C1F4D64210087D05A /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +540,7 @@
 				32FEA9511F4C00B300CDE0CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32FEA9521F4C00B300CDE0CD /* Build configuration list for PBXNativeTarget "PlistTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +549,7 @@
 				32FEA9541F4C00B300CDE0CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32FEA9551F4C00B300CDE0CD /* Build configuration list for PBXNativeTarget "PlistTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +558,7 @@
 				32FEA9571F4C00B300CDE0CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

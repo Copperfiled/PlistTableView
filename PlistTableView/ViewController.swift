@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let plistView = PlistTableView(frame: UIScreen.main.bounds, style: .plain)
+    let plistView = PlistTableView(frame: UIScreen.main.bounds, style: .plain, cellStyle: .default)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         
 //        self.tableView.delegate = self
         self.plistView.dataSource = self
-        self.plistView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.view.addSubview(plistView)
     }
 
@@ -34,12 +33,10 @@ extension ViewController: PlistTableViewDataSource {
     var plistName: String {
         return "test"
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    func tableView(_ tableView: UITableView, cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let model = self.plistView.model(at: indexPath)
-        cell.textLabel?.text = model["key"] as! String
-        cell.detailTextLabel?.text = model["value"] as! String
-        return cell
+        cell.textLabel?.text = model["key"] as? String
+        cell.detailTextLabel?.text = model["value"] as? String
     }
 }
 
