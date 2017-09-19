@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let plistView = PlistTableView(frame: UIScreen.main.bounds, style: .plain, cellStyle: .default)
+    let plistView = PlistTableView(frame: UIScreen.main.bounds, style: .grouped, cellStyle: [.value1, .switch, .input, .add])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +31,10 @@ extension ViewController: PlistTableViewDelegate {
 }
 extension ViewController: PlistTableViewDataSource {
     var plistName: String {
-        return "test"
+        return "roomDetail_info_distribute"
     }
-    func tableView(_ tableView: UITableView, cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let model = self.plistView.model(at: indexPath)
-        cell.textLabel?.text = model["key"] as? String
-        cell.detailTextLabel?.text = model["value"] as? String
+    func tableView(_ tableView: PlistTableView, config cell: UITableViewCell, parentKeyString: String?, keyString: String?, at indexPath: IndexPath) -> Void {
+        
     }
 }
 

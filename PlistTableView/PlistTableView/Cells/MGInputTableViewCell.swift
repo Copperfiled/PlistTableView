@@ -7,13 +7,10 @@
 //
 
 import UIKit
-import RxSwift
 
 let MGInputTableViewCellIdf = "MGInputTableViewCell"
 /// 右边有输入框的cell
 class MGInputTableViewCell: UITableViewCell {
-
-    var disposeBag: DisposeBag? = DisposeBag()
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var inputTextField: UITextField!
@@ -27,7 +24,5 @@ class MGInputTableViewCell: UITableViewCell {
     }
     override func prepareForReuse() {
         super.prepareForReuse()
-        disposeBag = nil
-        disposeBag = DisposeBag()
     }
 }

@@ -67,6 +67,7 @@ class PlistNode {
         self.plistName = tableView.plistName
         self.location = .bundle //for now, bundle is only
         self.tableView = tableView
+        
         self.rawValue = PlistManager.share.plist(for: tableView)
     }
 }
@@ -84,15 +85,28 @@ class PlistManager {
     @discardableResult
     func register(tableView: PlistTableView) -> Bool {
         if let filename = tableView.plistName {
-            if self.isPlistExist(filename) {
+            if plistDict[filename] != nil {
                 return false
             }
             let node = PlistNode(tableView)
+            node.rawValue = PlistManager.share.plist(for: tableView)
             plistDict[filename] = node
         }
         return false
     }
+    func plistNode(for tableView: PlistTableView) -> PlistNode? {
+        if let filename = tableView.plistName {
+            return plistDict[filename]
+        }
+        return nil
+    }
     
+    /// 只支持整体替换
+    func update(tableView: PlistTableView, with plistNode: PlistNode) {
+        if let filename = tableView.plistName {
+            plistDict[filename] = plistNode
+        }
+    }
     /// find the specified tableView
     ///
     /// - Parameter plist: the name of plist

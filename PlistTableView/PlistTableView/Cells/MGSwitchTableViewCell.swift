@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 let MGSwitchTabelViewCell = "MGSwitchTabelViewCell"
 
@@ -23,7 +21,6 @@ class MGSwitchTableViewCell: UITableViewCell {
     @IBOutlet var aSwitch: UISwitch!
     @IBOutlet fileprivate  var subtitleLabel: UILabel!
     @IBOutlet fileprivate var detailLabel: UILabel!
-    let disposeBag = DisposeBag()
     
     weak var delegate: MGSwitchTabelViewCellDelegate?
     
@@ -58,7 +55,7 @@ extension MGSwitchTableViewCell {
             let range = NSRange(location: 0, length: str.characters.count)
             attributeStr = NSMutableAttributedString(string: str)
             attributeStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 12), range: range)
-            attributeStr?.addAttribute(NSForegroundColorAttributeName, value: UIColor.mgWarmGrey, range: range)
+//            attributeStr?.addAttribute(NSForegroundColorAttributeName, value: UIColor.mgWarmGrey, range: range)
             
             let paragraph = NSMutableParagraphStyle()
             paragraph.lineSpacing = 10
